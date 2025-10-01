@@ -1,7 +1,7 @@
 
 public class Llista
 {
-	public Llista();
+	public Llista() {primer = null;};
 	
 	public boolean afegirUltim(int valor);
 	public boolean insertarValor(int posicio, int valor);
