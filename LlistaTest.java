@@ -24,6 +24,13 @@ class LlistaTest {
 	{
 		assertTrue(llista.afegirUltim(10));
 		assertEquals(llista.getValor(0),10);
+
+		assertTrue(llista.afegirUltim(11));
+		assertTrue(llista.afegirUltim(12));
+		assertEquals(llista.getValor(1),11);
+		assertEquals(llista.getValor(2),12);
+	
+	
 	}
 
 	@Test
@@ -39,13 +46,6 @@ class LlistaTest {
 	@Test
 	void testGetValor()
 	{
-		llista.afegirUltim(10);
-		llista.afegirUltim(11);
-		llista.afegirUltim(12);
-		
-		assertEquals(llista.getValor(0),10);
-		assertEquals(llista.getValor(1),11);
-		assertEquals(llista.getValor(1),12);		
 	}
 
 	@Test
