@@ -1,6 +1,8 @@
 
 public class Llista
 {
+	public Llista();
+	
 	public boolean afegirUltim(int valor);
 	public boolean insertarValor(int posicio, int valor);
 	public boolean eliminaValor(int posicio);
@@ -10,4 +12,7 @@ public class Llista
 	public int getNElements();
 	
 	private Node primer;
+	
+	// Mètodes per fer test
+	public Node getPrimer() {return primer;};
 }

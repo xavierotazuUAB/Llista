@@ -5,33 +5,41 @@ import org.junit.jupiter.api.Test;
 class LlistaTest {
 
 	@Test
-	void testAfegirUltim() {
-		fail("Not yet implemented");
+	void testLlista()
+	{
+		Llista llista = new Llista();
+		
+		assertEquals(llista.getPrimer(),null);	// decidim que primer ha de ser null
 	}
 
 	@Test
-	void testInsertarValor() {
-		fail("Not yet implemented");
+	void testAfegirUltim()
+	{
 	}
 
 	@Test
-	void testEliminaValor() {
-		fail("Not yet implemented");
+	void testInsertarValor()
+	{
 	}
 
 	@Test
-	void testGetValor() {
-		fail("Not yet implemented");
+	void testEliminaValor()
+	{
 	}
 
 	@Test
-	void testEsBuida() {
-		fail("Not yet implemented");
+	void testGetValor()
+	{
 	}
 
 	@Test
-	void testGetNElements() {
-		fail("Not yet implemented");
+	void testEsBuida()
+	{
+	}
+
+	@Test
+	void testGetNElements()
+	{
 	}
 
 }
