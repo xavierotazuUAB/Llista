@@ -12,7 +12,13 @@ class NodeTest {
 		
 		assertEquals(n.getValor(),0);	// valor decidim que ha de ser zero 
 		assertEquals(n.getNext(),null);	// next ha de ser zero
-	}
+
+		// Constructor amb parametre
+		Node n = new Node(1);
+		
+		assertEquals(n.getValor(),1); 
+		assertEquals(n.getNext(),null);	// next ha de ser zero
+}
 
 	@Test
 	void testSetValor()
