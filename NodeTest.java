@@ -31,9 +31,9 @@ class NodeTest
 	@Test
 	void testSetValor()
 	{
-		n2.setValor(1);
+		n2.setValor(3);
 		
-		assertEquals(n2.getValor(),2);		
+		assertEquals(n2.getValor(),3);		
 	}
 
 	@Test

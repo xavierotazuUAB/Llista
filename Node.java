@@ -8,7 +8,7 @@ public class Node
 	public int getValor() {return valor;};
 
 	public Node getNext() {return next;};
-	public void setNext(Node next);
+	public void setNext(Node n) {next=n;};
 	
 	private int valor;
 	private Node next;
