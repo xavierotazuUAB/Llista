@@ -2,7 +2,7 @@
 public class Node
 {
 	public Node() {valor=0; next=null;};
-	public Node(int v);
+	public Node(int v) {valor=v; next=null;};
 	
 	public void setValor(int v);
 	public int getValor() {return valor;};
