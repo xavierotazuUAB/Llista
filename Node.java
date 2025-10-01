@@ -1,11 +1,13 @@
 
 public class Node
 {
-	public Node();
+	public Node() {valor=0; next=null;};
 	public Node(int v);
 	
 	public void setValor(int v);
-	public Node getNext();
+	public int getValor() {return valor;};
+
+	public Node getNext() {return next;};
 	public void setNext(Node next);
 	
 	private int valor;

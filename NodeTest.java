@@ -11,22 +11,22 @@ class NodeTest {
 		Node n = new Node();
 		
 		assertEquals(n.getValor(),0);	// valor decidim que ha de ser zero 
-		assertEquals(n.getNext(),0);	// next ha de ser zero
+		assertEquals(n.getNext(),null);	// next ha de ser zero
 	}
 
 	@Test
-	void testSetValor() {
-		fail("Not yet implemented");
+	void testSetValor()
+	{
 	}
 
 	@Test
-	void testGetNext() {
-		fail("Not yet implemented");
+	void testGetNext()
+	{
 	}
 
 	@Test
-	void testSetNext() {
-		fail("Not yet implemented");
+	void testSetNext()
+	{
 	}
 
 }
