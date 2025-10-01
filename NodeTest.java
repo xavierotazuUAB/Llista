@@ -8,16 +8,16 @@ class NodeTest {
 	void testNode()
 	{
 		// Constructor per defecte
-		Node n = new Node();
+		Node n1 = new Node();
 		
-		assertEquals(n.getValor(),0);	// valor decidim que ha de ser zero 
-		assertEquals(n.getNext(),null);	// next ha de ser zero
+		assertEquals(n1.getValor(),0);	// valor decidim que ha de ser zero 
+		assertEquals(n1.getNext(),null);	// next ha de ser zero
 
 		// Constructor amb parametre
-		Node n = new Node(1);
+		Node n2 = new Node(1);
 		
-		assertEquals(n.getValor(),1); 
-		assertEquals(n.getNext(),null);	// next ha de ser zero
+		assertEquals(n2.getValor(),1); 
+		assertEquals(n2.getNext(),null);	// next ha de ser zero
 }
 
 	@Test
