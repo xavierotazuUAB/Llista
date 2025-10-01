@@ -2,7 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class NodeTest {
+class NodeTest
+{
 
 	@Test
 	void testNode()
@@ -18,11 +19,15 @@ class NodeTest {
 		
 		assertEquals(n2.getValor(),1); 
 		assertEquals(n2.getNext(),null);	// next ha de ser zero
-}
+	}
 
 	@Test
 	void testSetValor()
 	{
+		Node n1 = new Node();
+		n1.setValor(2);
+		
+		assertEquals(n1.getValor(),2);	// valor decidim que ha de ser zero		
 	}
 
 	@Test
