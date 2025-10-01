@@ -22,6 +22,8 @@ class LlistaTest {
 	@Test
 	void testAfegirUltim()
 	{
+		llista.afegirUltim(10);
+		assertEquals(llista.getValor(0),10);
 	}
 
 	@Test
@@ -37,6 +39,13 @@ class LlistaTest {
 	@Test
 	void testGetValor()
 	{
+		llista.afegirUltim(10);
+		llista.afegirUltim(11);
+		llista.afegirUltim(12);
+		
+		assertEquals(llista.getValor(0),10);
+		assertEquals(llista.getValor(1),11);
+		assertEquals(llista.getValor(1),12);		
 	}
 
 	@Test

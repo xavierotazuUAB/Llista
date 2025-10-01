@@ -8,7 +8,7 @@ public class Llista
 	public boolean eliminaValor(int posicio);
 	public int getValor(int posicio);
 	
-	public boolean esBuida();
+	public boolean esBuida() {return primer==null;};
 	public int getNElements();
 	
 	private Node primer;
