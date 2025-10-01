@@ -26,11 +26,6 @@ class NodeTest {
 	}
 
 	@Test
-	void testGetNext()
-	{
-	}
-
-	@Test
 	void testSetNext()
 	{
 	}
