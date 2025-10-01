@@ -22,7 +22,7 @@ class LlistaTest {
 	@Test
 	void testAfegirUltim()
 	{
-		llista.afegirUltim(10);
+		assertTrue(llista.afegirUltim(10));
 		assertEquals(llista.getValor(0),10);
 	}
 
