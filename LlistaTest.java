@@ -50,6 +50,12 @@ class LlistaTest {
 	@Test
 	void testGetNElements()
 	{
+		assertTrue(llista.afegirUltim(10));	
+		assertEquals(llista.getNElements(),1);	// Llista amb un element
+
+		assertTrue(llista.afegirUltim(11));
+		assertTrue(llista.afegirUltim(12));
+		assertEquals(llista.getNElements(),3);	// Llista amb 3 elements
 	}
 
 }
