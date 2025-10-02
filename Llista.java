@@ -56,6 +56,7 @@ public class Llista
 	};
 	
 	public boolean esBuida() {return primer==null;};
+	
 	public int getNElements()
 	{
 		int n_elem = 0;
