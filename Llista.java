@@ -64,8 +64,41 @@ public class Llista
 	}
 	
 	
+	public boolean eliminaValor(int posicio)
+	{
+		boolean bEliminat = false;
+		
+		Node anterior = null;	// guardarem el node anterior del que hem d'eliminar
+		Node actual = primer;	// guardarem el node que hem d'eliminar
+		Node seguent = null;	// guardarem el node seguent del que hem d'eliminar
+		
+		int pos = 0;
+		
+		// Comprovem que primer no sigui null
+		if(primer!=null)
+		{
+			
+			// Ens desplacem fins el node on hem de fer el tall
+			while(pos<posicio)
+			{
+				anterior = actual;
+				actual = actual.getNext();
+				pos = pos+1;
+			}
+			
+			seguent = actual.getNext(); // guardem una referencia/punter al node següent
+			
+			anterior.setNext(seguent);	// apuntem la referencia/punter next del node anterior al  nou node
+			
+			bEliminat = true;
+
+		}
+		
+		return bEliminat;
+	}
 	
-	public boolean eliminaValor(int posicio);
+	
+	
 	public int getValor(int posicio)
 	{
 		int valor = 0;
