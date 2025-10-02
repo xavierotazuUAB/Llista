@@ -29,7 +29,39 @@ public class Llista
 	}
 	
 	
-	public boolean insertarValor(int posicio, int valor);
+	public boolean insertarValor(int posicio, int valor)
+	{
+		boolean bInsertat = false;
+		
+		Node anterior = primer;
+		int pos = 0;
+		
+		// Comprovem que primer no sigui null
+		if(anterior!=null)
+		{
+			// Ens desplacem fins el node just anterior on hem de fer la inserció
+			while(pos<posicio)
+			{
+				anterior = anterior.getNext();
+				pos = pos+1;
+			}
+			
+			Node seguent = anterior.getNext(); // guardem una referencia/punter al node següent
+			
+			Node nou = new Node(valor);	// creem el nou node a insertar
+			
+			anterior.setNext(nou);		// apuntem la referencia/punter next del node anterior al  nou node
+			nou.setNext(seguent);
+			
+			bInsertat = true;
+
+		}
+		
+		return bInsertat;
+	}
+	
+	
+	
 	public boolean eliminaValor(int posicio);
 	public int getValor(int posicio)
 	{
