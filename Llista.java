@@ -33,20 +33,23 @@ public class Llista
 	{
 		boolean bInsertat = false;
 		
-		Node anterior = primer;
+		Node anterior = null;	// guardarem el node anterior d'on hem de fer la insercio
+		Node seguent = primer;	// guardarem el node seguent d'on hem de fer la insercio
+
 		int pos = 0;
 		
 		// Comprovem que primer no sigui null
-		if(anterior!=null)
+		if(primer!=null)
 		{
-			// Ens desplacem fins el node just anterior on hem de fer la inserció
+			// Ens desplacem fins la posicio on hem de fer la inserció
 			while(pos<posicio)
 			{
-				anterior = anterior.getNext();
+				anterior = seguent;
+				seguent = seguent.getNext();
 				pos = pos+1;
 			}
 			
-			Node seguent = anterior.getNext(); // guardem una referencia/punter al node següent
+			seguent = anterior.getNext(); // guardem una referencia/punter al node següent
 			
 			Node nou = new Node(valor);	// creem el nou node a insertar
 			
