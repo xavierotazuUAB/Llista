@@ -49,12 +49,24 @@ class LlistaTest {
 		assertEquals(llista.getValor(2),10);	
 		assertEquals(llista.getValor(3),2);	
 		assertEquals(llista.getValor(4),3);	
-		
 	}
 
 	@Test
 	void testEliminaValor()
 	{
+		// Creem la llista
+		assertTrue(llista.afegirUltim(0));
+		assertTrue(llista.afegirUltim(1));
+		assertTrue(llista.afegirUltim(2));
+		assertTrue(llista.afegirUltim(3));
+		
+		// Insertem el valor
+		llista.eliminaValor(2);
+
+		// Comprovem que la llista és correcta 
+		assertEquals(llista.getValor(0),0);
+		assertEquals(llista.getValor(1),1);	
+		assertEquals(llista.getValor(2),3);	
 	}
 
 	@Test
