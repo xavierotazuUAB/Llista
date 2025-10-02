@@ -56,7 +56,26 @@ public class Llista
 	};
 	
 	public boolean esBuida() {return primer==null;};
-	public int getNElements();
+	public int getNElements()
+	{
+		int n_elem = 0;
+
+		Node aux = primer;
+		
+		// Comprovem que primer no sigui null
+		if(aux!=null)
+		{
+			while(aux!=null)
+			{
+				n_elem = n_elem+1;
+				aux = aux.getNext();
+			}	
+
+		}
+		
+		return n_elem;
+		
+	}
 	
 	private Node primer;
 	
