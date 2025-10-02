@@ -34,6 +34,8 @@ class LlistaTest {
 	@Test
 	void testInsertarValor()
 	{
+		assertFalse(llista.insertarValor(0, 0));	// Llista buida
+		
 		// Creem la llista
 		assertTrue(llista.afegirUltim(0));
 		assertTrue(llista.afegirUltim(1));
@@ -54,6 +56,8 @@ class LlistaTest {
 	@Test
 	void testEliminaValor()
 	{
+		assertFalse(llista.eliminaValor(0)); // llista buida
+		
 		// Creem la llista
 		assertTrue(llista.afegirUltim(0));
 		assertTrue(llista.afegirUltim(1));
@@ -78,6 +82,8 @@ class LlistaTest {
 	@Test
 	void testGetNElements()
 	{
+		assertEquals(llista.getNElements(),0);	// Llista buida
+
 		assertTrue(llista.afegirUltim(10));	
 		assertEquals(llista.getNElements(),1);	// Llista amb un element
 
